@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // PostgreSQL configuration
 const pool = new Pool({
   user: 'registry_user',
-  host: '115.112.141.156',
+  host: '',
   database: 'container_registry',
   password: 'rainfall@1',
   port: 5432,

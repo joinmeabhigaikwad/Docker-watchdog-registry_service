@@ -6,7 +6,7 @@ const cron = require('node-cron');
 const docker = new Docker({ socketPath: '/var/run/docker.sock' });
 
 // REST endpoint to send data to
-const REST_ENDPOINT = 'http://115.112.141.156:5102/api/v1/container-activity';
+const REST_ENDPOINT = 'http://0.0.0.0:5102/api/v1/container-activity';
 
 // Function to fetch container activity and determine status (Active or Inactive)
 const getContainerActivity = async () => {
