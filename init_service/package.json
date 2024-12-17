@@ -1,0 +1,17 @@
+{
+    "name": "init-script",
+    "version": "1.0.0",
+    "description": "A script to track container activity and send data to a REST API",
+    "main": "init_script.js",
+    "scripts": {
+      "start": "node init_script.js"
+    },
+    "dependencies": {
+      "node-cron": "^3.0.0",
+      "axios": "^1.3.0",
+      "dockerode": "^3.2.0"
+    },
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  

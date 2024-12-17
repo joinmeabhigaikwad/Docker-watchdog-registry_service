@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  init-script:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: init-service-container
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

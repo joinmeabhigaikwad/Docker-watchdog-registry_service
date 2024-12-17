@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  rest-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: registry-rest-api-container
+    ports:
+      - "5102:5102"
